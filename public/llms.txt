@@ -1,0 +1,70 @@
+# llms.txt – Gardentime Facility Service GmbH
+# Dieses Dokument beschreibt den Inhalt der Website für KI-Crawler und Sprachmodelle.
+# Mehr Infos: https://llmstxt.org
+
+# Gardentime Facility Service GmbH
+
+> Professionelle Gartenpflege, Gartengestaltung und Facility Management in Frankfurt am Main und dem gesamten Rhein-Main-Gebiet.
+
+## Unternehmen
+
+- **Name:** Gardentime Facility Service GmbH
+- **Adresse:** Melchiorstraße 3-5, 65929 Frankfurt am Main
+- **Telefon:** 069 30 03 80 13
+- **Mobil:** 0172 700 21 21
+- **E-Mail:** info@gardentime-frankfurt.de
+- **Website:** https://www.gardentime-frankfurt.de
+- **Geschäftsführung:** Mert Kilic, Timur Can Savas
+- **Handelsregister:** HRB 16403, Amtsgericht Bad Homburg
+- **Öffnungszeiten:** Mo–Fr 07:00–18:00 Uhr, Sa 08:00–14:00 Uhr
+
+## Leistungen – Gartenpflege & Gartengestaltung
+
+- **Gartenpflege** – Regelmäßige Pflege von Privatgärten und Gewerbeanlagen im Rhein-Main-Gebiet
+- **Gartengestaltung** – Professionelle Planung und Umsetzung von Gartenanlagen
+- **Rasenpflege & Rasenschnitt** – Anlage und Pflege von Rasenflächen aller Art
+- **Heckenschnitt & Baumschnitt** – Formschnitt, Rückschnitt und Pflege von Hecken und Bäumen
+- **Bepflanzungen** – Saisonale und dauerhafte Bepflanzung von Beeten und Kübeln
+- **Bewässerungsanlagen** – Planung und Installation automatischer Bewässerungssysteme
+- **Pflasterarbeiten** – Verlegung von Pflaster, Wegen und Einfahrten
+- **Terrassenarbeiten** – Anlage und Sanierung von Terrassen
+- **Zaunarbeiten** – Montage und Instandhaltung von Zäunen und Sichtschutz
+- **Außenanlagen** – Gestaltung und Pflege von Außenanlagen für Gewerbe und Wohnanlagen
+
+## Leistungen – Facility Management
+
+- **Facility Management** – Vollständiges Gebäude- und Liegenschaftsmanagement
+- **Hausmeisterservice** – Zuverlässiger Hausmeister für Wohn- und Gewerbeimmobilien
+- **Gebäudereinigung** – Innen- und Außenreinigung von Gebäuden
+- **Winterdienst** – Räum- und Streudienst, Schneeräumung in Frankfurt und Umgebung
+- **Glasreinigung** – Professionelle Fenster- und Glasfassadenreinigung
+- **Objektbetreuung** – Ganzheitliche Betreuung von Wohn- und Gewerbeimmobilien
+- **Empfangsdienste** – Professionelle Empfangsdienste für Gewerbeobjekte
+- **Grünpflege** – Pflege von Grünflächen für Gewerbe, Wohnanlagen und Kommunen
+- **Graupflege** – Pflege von Schotter- und Kiesflächen
+- **Poolreinigung** – Reinigung und Pflege von Schwimmbecken
+- **Poolmessung** – Wasseranalyse und Chemikalienbehandlung für Pools
+
+## Servicegebiet
+
+Frankfurt am Main und das gesamte Rhein-Main-Gebiet, inklusive: Offenbach, Darmstadt, Wiesbaden, Mainz, Hanau, Bad Homburg, Eschborn, Rüsselsheim.
+
+## Warum Gardentime?
+
+- Über 10 Jahre Erfahrung im Garten- und Facility Management
+- Qualifiziertes und zuverlässiges Team
+- Nachhaltiger Einsatz von Geräten und Materialien
+- Kurzfristige Verfügbarkeit und flexible Vertragsmodelle
+- Persönliche Beratung vor Ort
+
+## Wichtige Seiten
+
+- Startseite: https://www.gardentime-frankfurt.de/
+- Leistungen: https://www.gardentime-frankfurt.de/leistungen
+- Gartenpflege: https://www.gardentime-frankfurt.de/leistungen/gartenpflege
+- Gartengestaltung: https://www.gardentime-frankfurt.de/leistungen/gartengestaltung
+- Facility Management: https://www.gardentime-frankfurt.de/leistungen/facility-management
+- Winterdienst: https://www.gardentime-frankfurt.de/leistungen/winterdienst
+- Projekte: https://www.gardentime-frankfurt.de/projekte
+- Jobs: https://www.gardentime-frankfurt.de/jobs
+- Kontakt: https://www.gardentime-frankfurt.de/kontakt
