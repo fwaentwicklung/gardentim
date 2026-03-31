@@ -1,6 +1,6 @@
 # llms.txt – Gardentime Facility Service GmbH
 # Dieses Dokument beschreibt den Inhalt der Website für KI-Crawler und Sprachmodelle.
-# Mehr Infos: https://llmstxt.org
+# Standard: https://llmstxt.org
 
 # Gardentime Facility Service GmbH
 
@@ -57,14 +57,188 @@ Frankfurt am Main und das gesamte Rhein-Main-Gebiet, inklusive: Offenbach, Darms
 - Kurzfristige Verfügbarkeit und flexible Vertragsmodelle
 - Persönliche Beratung vor Ort
 
+---
+
+## Häufige Fragen (FAQ) – Allgemein
+
+**In welchen Gebieten sind Sie tätig?**
+Wir sind in Frankfurt am Main und dem gesamten Rhein-Main-Gebiet tätig, inklusive Offenbach, Darmstadt, Wiesbaden, Mainz, Bad Homburg, Hanau und Eschborn.
+
+**Wie erhalte ich ein Angebot?**
+Kontaktieren Sie uns telefonisch unter 069 30 03 80 13 oder per E-Mail. Wir kommen kostenlos zu Ihnen vor Ort und erstellen ein individuelles Angebot.
+
+**Bieten Sie auch Pflegeverträge an?**
+Ja, wir bieten Jahrespflegeverträge mit festen monatlichen Raten an – planbar, zuverlässig und ohne böse Überraschungen.
+
+**Sind Ihre Mitarbeiter versichert und qualifiziert?**
+Ja, alle Mitarbeiter sind vollversichert, fachlich ausgebildet und regelmäßig geschult. Wir halten alle gesetzlichen Vorschriften ein.
+
+**Was kostet ein Gartenpflegedienst?**
+Die Kosten hängen von Gartengröße und Leistungsumfang ab. Ein kostenloser Vor-Ort-Termin gibt Ihnen Klarheit. Typische monatliche Pflegepauschalen beginnen ab ca. 80 €.
+
+---
+
+## Häufige Fragen – Gartenpflege
+
+**Wie oft sollte der Garten gepflegt werden?**
+Während der Hauptsaison (April–Oktober) empfehlen wir je nach Gartentyp wöchentliche oder zweiwöchentliche Einsätze. Im Winter reicht oft ein monatlicher Besuch.
+
+**Übernehmen Sie auch einmalige Gartenarbeiten?**
+Ja, neben Pflegeverträgen bieten wir auch Einzeleinsätze an – z.B. für die Frühjahrsvorbereitung oder nach dem Urlaub.
+
+---
+
+## Häufige Fragen – Baumschnitt
+
+**Wann ist der beste Zeitpunkt für Baumschnitt?**
+Leichte Pflegeschnitte sind ganzjährig möglich. Stärkere Schnitte sollten in der Vegetationsruhe (Oktober bis Februar) erfolgen.
+
+**Brauche ich eine Genehmigung für Baumschnitt?**
+In Frankfurt gibt es eine Baumschutzsatzung. Wir prüfen die Genehmigungspflicht für Sie und beantragen ggf. erforderliche Genehmigungen.
+
+**Entsorgen Sie das Schnittgut?**
+Ja, wir entsorgen alles fachgerecht. Auf Wunsch häckseln wir das Material zu Mulch, den Sie im Garten weiter nutzen können.
+
+**Arbeiten Sie auch bei großen Bäumen?**
+Ja, wir arbeiten mit Seilklettertechnik und Hubarbeitsbühne auch an großen Bäumen – sicher und mit dem nötigen Gerät.
+
+---
+
+## Häufige Fragen – Bewässerungsanlagen
+
+**Lohnt sich eine Bewässerungsanlage für einen kleinen Garten?**
+Ja! Schon ab 80 m² Rasenfläche amortisiert sich eine automatische Bewässerungsanlage durch Wasserersparnis und Zeitgewinn. Wir bieten auch kompakte Systeme für kleinere Gärten ab ca. 1.200 € an.
+
+**Was kostet eine Bewässerungsanlage in Frankfurt?**
+Eine einfache Rasenbewässerung beginnt ab ca. 1.500 €. Komplette Systeme für größere Gärten liegen zwischen 3.000 und 15.000 €.
+
+**Können bestehende Anlagen erweitert werden?**
+Ja, wir können in der Regel bestehende Bewässerungsanlagen um weitere Zonen erweitern oder defekte Komponenten reparieren – auch von anderen Herstellern.
+
+**Muss ich die Anlage im Winter abschalten?**
+Ja, vor dem ersten Frost muss das Wasserleitungssystem eingeblasen werden. Garden Time bietet diesen Service als jährlichen Wartungsvertrag an.
+
+---
+
+## Häufige Fragen – Terrassenarbeiten
+
+**Welches Terrassenmaterial empfehlen Sie?**
+Das hängt von Nutzung, Budget und Optik ab. Naturstein ist langlebig und hochwertig, WPC wartungsarm, Holz natürlich schön. Wir beraten Sie gerne.
+
+**Wie lange dauert der Bau einer Terrasse?**
+Eine typische Terrasse (30–60 m²) ist in 2–5 Arbeitstagen fertig.
+
+**Bauen Sie auch Überdachungen?**
+Ja, wir planen und bauen Terrassenüberdachungen aus Aluminium, Holz oder Stahl sowie Pergolen und freistehende Pavillons.
+
+**Was kostet eine Terrasse?**
+Je nach Material und Größe beginnen die Kosten bei ca. 80–250 €/m² inkl. Unterkonstruktion und Verlegung. Das Angebot ist kostenlos.
+
+---
+
+## Häufige Fragen – Pflasterarbeiten
+
+**Welche Pflastermaterialien bieten Sie an?**
+Wir verlegen Natursteine (Granit, Basalt, Sandstein), Betonpflaster, Klinker und Porzellanplatten.
+
+**Wie lange dauern Pflasterarbeiten?**
+Je nach Flächengröße und Material zwischen einem und mehreren Tagen.
+
+**Machen Sie auch Reparaturen an bestehenden Pflasterflächen?**
+Ja, wir reparieren abgesackte Stellen, tauschen beschädigte Steine aus und verlegen bei Bedarf ganze Flächen neu.
+
+---
+
+## Häufige Fragen – Zaunarbeiten
+
+**Welche Zaunarten bauen Sie?**
+Wir bauen Holzzäune, Doppelstabmattenzäune, Gabionen, Sichtschutzzäune aus WPC und Metall sowie Einfahrtstore.
+
+**Können Sie auch Einfahrtstore mit Automatik einbauen?**
+Ja, wir liefern und montieren elektrische Dreh- und Schiebetore inkl. Fernbedienung und Sprechanlagenanbindung.
+
+**Reparieren Sie auch bestehende Zäune?**
+Ja, wir reparieren beschädigte Zäune, ersetzen einzelne Pfosten oder Elemente und streichen Holzzäune neu.
+
+---
+
+## Häufige Fragen – Außenanlagen (Gewerbe)
+
+**Was umfasst die Außenanlagenpflege für Gewerbe in Frankfurt?**
+Unsere gewerbliche Außenanlagenpflege umfasst: Rasenpflege, Hecken- und Baumpflege, Beete und Bepflanzungen, Wege- und Parkplatzreinigung sowie Laubentsorgung.
+
+**Arbeiten Sie auch für Wohnungseigentümergemeinschaften (WEG)?**
+Ja, WEG und Hausverwaltungen sind wichtige Kunden von Garden Time. Wir bieten jahresvertragliche Pflegeleistungen mit klarer Abrechnung.
+
+---
+
+## Häufige Fragen – Facility Management
+
+**Für welche Objekte bieten Sie FM in Frankfurt an?**
+Wir betreuen Bürokomplexe, Wohnanlagen (WEG und Mietobjekte), Einkaufszentren, Hotels und Logistikzentren in Frankfurt und dem gesamten Rhein-Main-Gebiet.
+
+**Was kostet Facility Management in Frankfurt?**
+Individuelle Jahresfestpreise – in der Regel ab 500 €/Monat für kleinere Objekte. Gerne erstellen wir Ihnen ein Angebot nach Objektbegehung.
+
+**Wie schnell können Sie einen FM-Vertrag starten?**
+In der Regel innerhalb von 2–4 Wochen nach Vertragsunterzeichnung. Bei dringendem Bedarf auch früher.
+
+---
+
+## Häufige Fragen – Hausmeisterservice
+
+**Was kostet ein Hausmeisterservice in Frankfurt?**
+Monatliche Betreuungsverträge beginnen ab 250 €/Monat für kleine Objekte.
+
+**Übernehmen Sie auch Notfalleinsätze?**
+Ja, unser Notfalldienst ist 24/7 erreichbar. Notfalleinsätze werden sofort koordiniert und bearbeitet.
+
+**Arbeiten Sie mit Hausverwaltungen zusammen?**
+Ja, wir kooperieren eng mit Hausverwaltungen und WEG-Verwaltern in Frankfurt.
+
+---
+
+## Häufige Fragen – Glasreinigung
+
+**Wie oft empfehlen Sie Glasreinigung?**
+Für Gewerbeobjekte empfehlen wir je nach Lage wöchentliche bis monatliche Reinigung.
+
+**Arbeiten Sie auch bei großen Glasfassaden?**
+Ja, wir arbeiten mit Hubarbeitsbühnen, Steigern und Seilzugangstechnik auch an hohen Fassaden.
+
+**Reinigen Sie auch nach Bauarbeiten?**
+Ja, Baureinigungen (Glasreinigung, Bodenreinigung, Endreinigung) sind ein Schwerpunkt unseres Leistungsangebots.
+
+---
+
+## Häufige Fragen – Grünpflege
+
+**Für welche Objekte bieten Sie Grünpflege an?**
+Wir pflegen Grünanlagen von Wohnanlagen, Bürogebäuden, Gewerbeparks, Schulen und öffentlichen Flächen.
+
+**Wie funktioniert die Abrechnung?**
+Sie zahlen einen festen Jahresbetrag in monatlichen Raten – planbar und ohne Überraschungen.
+
+---
+
 ## Wichtige Seiten
 
 - Startseite: https://www.gardentime-frankfurt.de/
 - Leistungen: https://www.gardentime-frankfurt.de/leistungen
 - Gartenpflege: https://www.gardentime-frankfurt.de/leistungen/gartenpflege
 - Gartengestaltung: https://www.gardentime-frankfurt.de/leistungen/gartengestaltung
+- Heckenschnitt & Baumschnitt: https://www.gardentime-frankfurt.de/leistungen/heckenschnitt-baumschnitt
+- Bewässerungsanlagen: https://www.gardentime-frankfurt.de/leistungen/bewaesserungsanlagen
+- Pflasterarbeiten: https://www.gardentime-frankfurt.de/leistungen/pflasterarbeiten
+- Terrassenarbeiten: https://www.gardentime-frankfurt.de/leistungen/terrassenarbeiten
+- Zaunarbeiten: https://www.gardentime-frankfurt.de/leistungen/zaunarbeiten
+- Außenanlagen: https://www.gardentime-frankfurt.de/leistungen/aussenanlagen
 - Facility Management: https://www.gardentime-frankfurt.de/leistungen/facility-management
+- Hausmeisterservice: https://www.gardentime-frankfurt.de/leistungen/hausmeisterservice
+- Gebäudereinigung: https://www.gardentime-frankfurt.de/leistungen/gebaeudereinigung
 - Winterdienst: https://www.gardentime-frankfurt.de/leistungen/winterdienst
+- Glasreinigung: https://www.gardentime-frankfurt.de/leistungen/glasreinigung
+- Grünpflege: https://www.gardentime-frankfurt.de/leistungen/gruenpflege
 - Projekte: https://www.gardentime-frankfurt.de/projekte
 - Jobs: https://www.gardentime-frankfurt.de/jobs
 - Kontakt: https://www.gardentime-frankfurt.de/kontakt
