@@ -15,7 +15,7 @@ import AdminCmsTab from '../components/AdminCmsTab';
 import AdminJobsTab from '../components/AdminJobsTab';
 import { projectId, publicAnonKey } from '/utils/supabase/info';
 
-const ADMIN_PASSWORD = 'GardenTime2024';
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD ?? '';
 const BASE_URL = `https://${projectId}.supabase.co/functions/v1/make-server-00a2191f`;
 
 const defaultNewProject: Omit<Project, 'id' | 'date'> = {

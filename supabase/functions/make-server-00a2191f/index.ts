@@ -9,17 +9,38 @@ const app = new Hono();
 // Enable logger
 app.use('*', logger(console.log));
 
-// Enable CORS for all routes and methods
+// ─────────────────────────────────────────────
+// CORS – nur eigene Domain + lokale Entwicklung
+// ─────────────────────────────────────────────
 app.use(
   "/*",
   cors({
-    origin: "*",
-    allowHeaders: ["Content-Type", "Authorization"],
+    origin: [
+      "https://gardentim.vercel.app",
+      "https://www.gardentime-frankfurt.de",
+      "http://localhost:5173",
+      "http://localhost:4173",
+    ],
+    allowHeaders: ["Content-Type", "Authorization", "X-Admin-Secret"],
     allowMethods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     exposeHeaders: ["Content-Length"],
     maxAge: 600,
   }),
 );
+
+// ─────────────────────────────────────────────
+// Admin-Authentifizierung
+// ─────────────────────────────────────────────
+function isAdmin(req: Request): boolean {
+  const secret = Deno.env.get("ADMIN_API_SECRET");
+  if (!secret) return false; // Kein Secret konfiguriert = immer abgelehnt
+  const provided = req.headers.get("X-Admin-Secret");
+  return provided === secret;
+}
+
+function unauthorizedResponse(c: { json: (body: unknown, status: number) => Response }) {
+  return c.json({ error: "Nicht autorisiert" }, 401);
+}
 
 // ─────────────────────────────────────────────
 // Supabase Storage – Bucket initialisieren
@@ -44,7 +65,7 @@ const CMS_BUCKET = "make-00a2191f-cms-images";
   }
 })();
 
-// Health check
+// Health check (öffentlich)
 app.get("/make-server-00a2191f/health", (c) => {
   return c.json({ status: "ok" });
 });
@@ -53,7 +74,7 @@ app.get("/make-server-00a2191f/health", (c) => {
 // LEADS
 // ─────────────────────────────────────────────
 
-// POST /leads – Neuen Lead speichern (öffentlich, vom Kontaktformular)
+// POST /leads – Neuen Lead speichern (ÖFFENTLICH – Kontaktformular)
 app.post("/make-server-00a2191f/leads", async (c) => {
   try {
     const body = await c.req.json();
@@ -81,22 +102,18 @@ app.post("/make-server-00a2191f/leads", async (c) => {
 
     // E-Mail über Resend senden
     const resendApiKey = Deno.env.get("RESEND_API_KEY");
-    // Für die Test- bzw. Free-Phase nutzt Resend die registrierte Mail als Empfänger.
-    // Bitte setze in den Supabase Secrets unbedingt die ADMIN_EMAIL auf die Mailadresse, 
-    // mit der du den Resend-Account angelegt hast.
     const adminEmail = Deno.env.get("ADMIN_EMAIL");
-    
+
     if (resendApiKey && adminEmail) {
       try {
         const emailRes = await fetch("https://api.resend.com/emails", {
           method: "POST",
           headers: {
             "Authorization": `Bearer ${resendApiKey}`,
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            // Standard-Absender von Resend für einfache Tests
-            from: "Garden Time Anfragen <onboarding@resend.dev>", 
+            from: "Garden Time Anfragen <onboarding@resend.dev>",
             to: adminEmail,
             subject: `Neue Anfrage von ${name} - ${service}`,
             html: `
@@ -108,10 +125,10 @@ app.post("/make-server-00a2191f/leads", async (c) => {
               <p><strong>Nachricht:</strong><br/>${message ? message.replace(/\n/g, '<br/>') : 'Keine Nachricht'}</p>
               <hr/>
               <p><small>DSGVO zugestimmt: ${dsgvo ? 'Ja' : 'Nein'} | ID: ${id}</small></p>
-            `
-          })
+            `,
+          }),
         });
-        
+
         if (!emailRes.ok) {
           const errorText = await emailRes.text();
           console.error(`E-Mail Versand fehlgeschlagen: ${errorText}`);
@@ -121,8 +138,6 @@ app.post("/make-server-00a2191f/leads", async (c) => {
       } catch (err) {
         console.error(`Fehler beim Senden der E-Mail über Resend: ${err}`);
       }
-    } else {
-      console.log('RESEND_API_KEY oder ADMIN_EMAIL fehlt in den Environment Variablen, oder beides. E-Mail wird nicht gesendet.');
     }
 
     return c.json({ success: true, lead }, 201);
@@ -132,8 +147,9 @@ app.post("/make-server-00a2191f/leads", async (c) => {
   }
 });
 
-// GET /leads – Alle Leads abrufen (Admin)
+// GET /leads – Alle Leads abrufen (🔒 ADMIN)
 app.get("/make-server-00a2191f/leads", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const entries = await kv.getByPrefix("lead:");
     const leads = entries
@@ -151,8 +167,9 @@ app.get("/make-server-00a2191f/leads", async (c) => {
   }
 });
 
-// PATCH /leads/:id – Lead-Status aktualisieren (Admin)
+// PATCH /leads/:id – Lead-Status aktualisieren (🔒 ADMIN)
 app.patch("/make-server-00a2191f/leads/:id", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const id = c.req.param("id");
     const body = await c.req.json();
@@ -173,8 +190,9 @@ app.patch("/make-server-00a2191f/leads/:id", async (c) => {
   }
 });
 
-// DELETE /leads/:id – Lead löschen (Admin)
+// DELETE /leads/:id – Lead löschen (🔒 ADMIN)
 app.delete("/make-server-00a2191f/leads/:id", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const id = c.req.param("id");
     await kv.del(`lead:${id}`);
@@ -189,8 +207,9 @@ app.delete("/make-server-00a2191f/leads/:id", async (c) => {
 // PROJEKTE
 // ─────────────────────────────────────────────
 
-// POST /projects – Neues Projekt speichern (Admin)
+// POST /projects – Neues Projekt speichern (🔒 ADMIN)
 app.post("/make-server-00a2191f/projects", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const body = await c.req.json();
     const { title, category, description, imageUrl, location } = body;
@@ -219,7 +238,7 @@ app.post("/make-server-00a2191f/projects", async (c) => {
   }
 });
 
-// GET /projects – Alle Projekte abrufen (öffentlich)
+// GET /projects – Alle Projekte abrufen (ÖFFENTLICH – Portfolio)
 app.get("/make-server-00a2191f/projects", async (c) => {
   try {
     const entries = await kv.getByPrefix("project:");
@@ -238,8 +257,9 @@ app.get("/make-server-00a2191f/projects", async (c) => {
   }
 });
 
-// DELETE /projects/:id – Projekt löschen (Admin)
+// DELETE /projects/:id – Projekt löschen (🔒 ADMIN)
 app.delete("/make-server-00a2191f/projects/:id", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const id = c.req.param("id");
     await kv.del(`project:${id}`);
@@ -250,8 +270,9 @@ app.delete("/make-server-00a2191f/projects/:id", async (c) => {
   }
 });
 
-// POST /projects/upload – Projektbild hochladen
+// POST /projects/upload – Projektbild hochladen (🔒 ADMIN)
 app.post("/make-server-00a2191f/projects/upload", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const formData = await c.req.formData();
     const file = formData.get("file") as File | null;
@@ -289,7 +310,7 @@ app.post("/make-server-00a2191f/projects/upload", async (c) => {
 // CMS – Bildverwaltung
 // ─────────────────────────────────────────────
 
-// GET /cms – Alle CMS-Werte laden
+// GET /cms – Alle CMS-Werte laden (ÖFFENTLICH – Website braucht Bilder)
 app.get("/make-server-00a2191f/cms", async (c) => {
   try {
     const raw = await kv.get("cms:config");
@@ -304,8 +325,9 @@ app.get("/make-server-00a2191f/cms", async (c) => {
   }
 });
 
-// POST /cms – Einen CMS-Wert speichern
+// POST /cms – Einen CMS-Wert speichern (🔒 ADMIN)
 app.post("/make-server-00a2191f/cms", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const body = await c.req.json();
     const { key, value } = body;
@@ -325,8 +347,9 @@ app.post("/make-server-00a2191f/cms", async (c) => {
   }
 });
 
-// POST /cms/bulk – Mehrere CMS-Werte auf einmal
+// POST /cms/bulk – Mehrere CMS-Werte auf einmal (🔒 ADMIN)
 app.post("/make-server-00a2191f/cms/bulk", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const body = await c.req.json();
     const { updates } = body as { updates: Record<string, string> };
@@ -346,8 +369,9 @@ app.post("/make-server-00a2191f/cms/bulk", async (c) => {
   }
 });
 
-// POST /cms/upload – Bild hochladen und öffentliche URL zurückgeben
+// POST /cms/upload – Bild hochladen (🔒 ADMIN)
 app.post("/make-server-00a2191f/cms/upload", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const formData = await c.req.formData();
     const file = formData.get("file") as File | null;
@@ -387,10 +411,12 @@ app.post("/make-server-00a2191f/cms/upload", async (c) => {
 // JOBS – Stellenangebote
 // ─────────────────────────────────────────────
 
-// GET /jobs – Aktive Jobs abrufen (öffentlich)
+// GET /jobs – Aktive Jobs abrufen (ÖFFENTLICH)
 app.get("/make-server-00a2191f/jobs", async (c) => {
   try {
     const showAll = c.req.query("all") === "true";
+    // showAll nur für Admins
+    if (showAll && !isAdmin(c.req.raw)) return unauthorizedResponse(c);
     const entries = await kv.getByPrefix("job:");
     const jobs = entries
       .map((entry: string) => {
@@ -408,8 +434,9 @@ app.get("/make-server-00a2191f/jobs", async (c) => {
   }
 });
 
-// POST /jobs – Neuen Job erstellen (Admin)
+// POST /jobs – Neuen Job erstellen (🔒 ADMIN)
 app.post("/make-server-00a2191f/jobs", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const body = await c.req.json();
     const { title, department, location, type, description, requirements } = body;
@@ -440,8 +467,9 @@ app.post("/make-server-00a2191f/jobs", async (c) => {
   }
 });
 
-// PATCH /jobs/:id – Job aktualisieren (Admin)
+// PATCH /jobs/:id – Job aktualisieren (🔒 ADMIN)
 app.patch("/make-server-00a2191f/jobs/:id", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const id = c.req.param("id");
     const body = await c.req.json();
@@ -459,8 +487,9 @@ app.patch("/make-server-00a2191f/jobs/:id", async (c) => {
   }
 });
 
-// DELETE /jobs/:id – Job löschen (Admin)
+// DELETE /jobs/:id – Job löschen (🔒 ADMIN)
 app.delete("/make-server-00a2191f/jobs/:id", async (c) => {
+  if (!isAdmin(c.req.raw)) return unauthorizedResponse(c);
   try {
     const id = c.req.param("id");
     await kv.del(`job:${id}`);
