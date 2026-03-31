@@ -161,6 +161,27 @@ export default function Footer() {
             </button>
           </div>
         </div>
+        {/* Agentur-Credit */}
+        <div className="border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-center">
+            <a
+              href="https://www.frankfurter-werbeagentur.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 group opacity-60 hover:opacity-100 transition-opacity"
+              aria-label="Entwickelt von der Frankfurter Werbeagentur"
+            >
+              <img
+                src="/fwa-logo.png"
+                alt="Frankfurter Werbeagentur Logo"
+                className="h-5 w-auto object-contain"
+              />
+              <span className="text-[#98c4be] text-xs group-hover:text-white transition-colors">
+                Entwickelt von der <span className="font-semibold">Frankfurter Werbeagentur</span>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
