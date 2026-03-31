@@ -65,12 +65,10 @@
     "vaul": "1.1.2"
   },
   "devDependencies": {
-    "@prerenderer/renderer-jsdom": "^1.1.9",
     "@tailwindcss/vite": "4.1.12",
     "@vitejs/plugin-react": "4.7.0",
     "tailwindcss": "4.1.12",
-    "vite": "6.3.5",
-    "vite-plugin-prerender": "^1.0.8"
+    "vite": "6.3.5"
   },
   "peerDependencies": {
     "react": "18.3.1",
