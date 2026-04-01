@@ -17,6 +17,8 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Gardentime Logo"
+                width="196"
+                height="196"
                 className="h-24 w-auto object-contain"
                 style={{ mixBlendMode: 'luminosity', filter: 'brightness(0) invert(1)', opacity: 0.9 }}
               />
@@ -174,6 +176,8 @@ export default function Footer() {
               <img
                 src="/fwa-logo.png"
                 alt="Frankfurter Werbeagentur Logo"
+                width="120"
+                height="20"
                 className="h-5 w-auto object-contain"
               />
               <span className="text-[#98c4be] text-xs group-hover:text-white transition-colors">

@@ -179,8 +179,9 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
             {errors.phone && <p className="text-red-500 text-xs mt-1 flex items-center gap-1"><AlertCircle size={12} />{errors.phone}</p>}
           </div>
           <div>
-            <label className={labelClass}>Gewünschte Leistung *</label>
+            <label htmlFor="lead-service" className={labelClass}>Gewünschte Leistung *</label>
             <select
+              id="lead-service"
               value={formData.service}
               onChange={(e) => { setFormData({ ...formData, service: e.target.value }); setErrors({ ...errors, service: '' }); }}
               className={inputClass('service')}

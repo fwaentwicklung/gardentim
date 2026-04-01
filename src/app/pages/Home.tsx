@@ -73,12 +73,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[#003f2e]">
         <div className="absolute inset-0">
-          {/* Bild wird erst gerendert wenn URL geladen – kein Fallback-Flash */}
-          {!cmsLoading && heroImg && (
+          {/* Hero-Bild: immer rendern + höchste Priorität für optimalen LCP */}
+          {heroImg && (
             <img
               src={heroImg}
               alt="Professionelle Gartenpflege Frankfurt"
               className="w-full h-full object-cover"
+              fetchPriority="high"
+              decoding="async"
             />
           )}
           <div className="absolute inset-0 bg-gradient-to-r from-[#003f2e]/90 via-[#003f2e]/70 to-transparent" />

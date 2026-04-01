@@ -90,6 +90,8 @@ export default function Navigation() {
             <img
               src="/logo.png"
               alt="Gardentime Logo"
+              width="196"
+              height="196"
               className="h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
