@@ -9,6 +9,8 @@ import { getCmsImages, setCmsImage } from '../lib/api';
 import { DEFAULT_IMAGES } from '../lib/useCmsImages';
 import { projectId, publicAnonKey } from '/utils/supabase/info';
 
+const adminSecret = import.meta.env.VITE_ADMIN_API_SECRET ?? '';
+
 interface CmsImageField {
   key: string;
   label: string;
@@ -137,7 +139,10 @@ function ImageField({ field, currentValue, onSave }: ImageFieldProps) {
         `https://${projectId}.supabase.co/functions/v1/make-server-00a2191f/cms/upload`,
         {
           method: 'POST',
-          headers: { Authorization: `Bearer ${publicAnonKey}` },
+          headers: {
+            Authorization: `Bearer ${publicAnonKey}`,
+            'X-Admin-Secret': adminSecret,
+          },
           body: formData,
         }
       );
