@@ -17,6 +17,7 @@ app.use(
   cors({
     origin: [
       "https://gardentim.vercel.app",
+      "https://gardentime-frankfurt.de",
       "https://www.gardentime-frankfurt.de",
       "http://localhost:5173",
       "http://localhost:4173",
