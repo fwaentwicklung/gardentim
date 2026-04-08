@@ -70,10 +70,6 @@ export const router = createBrowserRouter([
       { path: 'leistungen/poolreinigung', Component: PoolreinigungPage },
       { path: 'leistungen/poolmessung', Component: PoolmessungPage },
 
-      // Kompatibilitäts-Routen
-      { path: 'gartenpflege', Component: GartenpflegePage },
-      { path: 'facility-management', Component: FacilityManagementPage },
-
       // Rest
       { path: 'projekte', Component: Projekte },
       { path: 'jobs', Component: Jobs },

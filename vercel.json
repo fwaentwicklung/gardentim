@@ -1,4 +1,8 @@
 {
+  "redirects": [
+    { "source": "/gartenpflege", "destination": "/leistungen/gartenpflege", "permanent": true },
+    { "source": "/facility-management", "destination": "/leistungen/facility-management", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
