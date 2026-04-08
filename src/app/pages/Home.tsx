@@ -193,7 +193,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <Link
-                  to="/gartenpflege"
+                  to="/leistungen/gartenpflege"
                   className="inline-flex items-center gap-2 bg-[#003f2e] text-[#bcff83] px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#2d746d] transition-colors"
                 >
                   Mehr erfahren
@@ -235,7 +235,7 @@ export default function Home() {
                   ))}
                 </ul>
                 <Link
-                  to="/facility-management"
+                  to="/leistungen/facility-management"
                   className="inline-flex items-center gap-2 bg-[#003f2e] text-[#bcff83] px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#2d746d] transition-colors"
                 >
                   Mehr erfahren

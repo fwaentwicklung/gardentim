@@ -61,7 +61,7 @@ export default function Footer() {
               ].map((s) => (
                 <li key={s}>
                   <Link
-                    to="/gartenpflege"
+                    to="/leistungen/gartenpflege"
                     className="text-[#98c4be] text-sm hover:text-[#bcff83] transition-colors"
                   >
                     {s}
@@ -87,7 +87,7 @@ export default function Footer() {
               ].map((s) => (
                 <li key={s}>
                   <Link
-                    to="/facility-management"
+                    to="/leistungen/facility-management"
                     className="text-[#98c4be] text-sm hover:text-[#bcff83] transition-colors"
                   >
                     {s}
