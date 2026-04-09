@@ -52,6 +52,7 @@ export default function BepflanzungenPage() {
         { step: '01', title: 'Beratung & Bepflanzungsplan', description: 'Wir analysieren Ihren Standort und erstellen einen auf Sie abgestimmten Bepflanzungsplan.' },
         { step: '02', title: 'Pflanzenbeschaffung', description: 'Wir beschaffen alle Pflanzen in Gärtnerqualität zu fairen Preisen.' },
         { step: '03', title: 'Pflanzung & Anwachspflege', description: 'Unser Team pflanzt fachgerecht und sorgt für die ersten Wochen mit Anwachspflege.' },
+        { step: '04', title: 'Langzeitpflege & Garantie', description: 'Auf Wunsch übernehmen wir die laufende Pflege – mit Pflanzengarantie und saisonaler Anpassung.' },
       ]}
       faqs={[
         { q: 'Erstellen Sie Bepflanzungspläne?', a: 'Ja, wir erstellen individuelle Bepflanzungspläne abgestimmt auf Ihren Garten, Standort und Stil – auf Wunsch mit 3D-Visualisierung.' },

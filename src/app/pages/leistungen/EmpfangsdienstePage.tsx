@@ -52,6 +52,7 @@ export default function EmpfangsdienstePage() {
         { step: '01', title: 'Bedarfsanalyse', description: 'Wir analysieren Ihr Objekt, Ihren Bedarf und Ihre Anforderungen an Empfang und Sicherheit.' },
         { step: '02', title: 'Personalplanung & Angebot', description: 'Wir erstellen ein maßgeschneidertes Personalkonzept mit transparenten Kosten.' },
         { step: '03', title: 'Einarbeitung & Start', description: 'Unsere Mitarbeiter werden objektbezogen eingearbeitet und starten zuverlässig zum vereinbarten Termin.' },
+        { step: '04', title: 'Qualitätskontrolle & Feedback', description: 'Regelmäßige Qualitätschecks und direkter Ansprechpartner stellen dauerhaft hohe Servicequalität sicher.' },
       ]}
       faqs={[
         { q: 'Stellen Sie Personal auch kurzfristig zur Verfügung?', a: 'Ja, bei kurzfristigem Bedarf (z.B. Urlaubs- oder Krankheitsvertretung) können wir oft innerhalb von 24 Stunden Ersatz stellen.' },

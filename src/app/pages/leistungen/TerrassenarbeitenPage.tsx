@@ -52,6 +52,7 @@ export default function TerrassenarbeitenPage() {
         { step: '01', title: 'Beratung & Planung', description: 'Wir besichtigen die Fläche, beraten zur Materialwahl und erstellen einen Gestaltungsplan.' },
         { step: '02', title: 'Angebot & Freigabe', description: 'Sie erhalten ein detailliertes Angebot und wir legen gemeinsam den Ausführungstermin fest.' },
         { step: '03', title: 'Bau & Übergabe', description: 'Unser Team baut Ihre Terrasse fachgerecht und sauber – pünktlich zum vereinbarten Termin.' },
+        { step: '04', title: 'Abnahme & Pflegehinweise', description: 'Gemeinsame Abnahme Ihrer neuen Terrasse und individuelle Hinweise zur richtigen Pflege des Materials.' },
       ]}
       faqs={[
         { q: 'Welches Terrassenmaterial empfehlen Sie?', a: 'Das hängt von Nutzung, Budget und Optik ab. Naturstein ist langlebig und hochwertig, WPC wartungsarm, Holz natürlich schön. Wir beraten Sie gerne.' },

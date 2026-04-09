@@ -52,6 +52,7 @@ export default function PoolreinigungPage() {
         { step: '01', title: 'Poolbesichtigung', description: 'Wir besichtigen Ihren Pool und Ihre Technik und erstellen ein passendes Pflegekonzept.' },
         { step: '02', title: 'Pflegevertrag & Termine', description: 'Sie wählen Ihren Pflegerhythmus – wir planen feste Termine und stimmen uns auf Ihre Nutzung ab.' },
         { step: '03', title: 'Regelmäßige Pflege', description: 'Zuverlässige Reinigung zum vereinbarten Termin – Sie kommen immer in einen sauberen Pool.' },
+        { step: '04', title: 'Saisonöffnung & -schließung', description: 'Wir kümmern uns um die vollständige Saisonvorbereitung im Frühjahr und fachgerechte Winterisierung.' },
       ]}
       faqs={[
         { q: 'Wie oft sollte ein Pool gereinigt werden?', a: 'Im Sommer empfehlen wir wöchentliche Reinigung. In der Nebensaison reicht zweiwöchentliche oder monatliche Pflege.' },

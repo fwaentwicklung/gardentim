@@ -52,6 +52,7 @@ export default function GraupflegePage() {
         { step: '01', title: 'Flächenbesichtigung', description: 'Wir besichtigen Ihre Hartflächen und erstellen einen Pflegeplan inkl. notwendiger Maßnahmen.' },
         { step: '02', title: 'Angebot & Terminplanung', description: 'Transparentes Angebot mit klar definierten Leistungen und Pflegeintervallen.' },
         { step: '03', title: 'Regelmäßige Pflege', description: 'Zuverlässige Durchführung aller Pflegemaßnahmen – mit Protokoll und Qualitätskontrolle.' },
+        { step: '04', title: 'Saisonale Anpassung', description: 'Wir passen die Pflegemaßnahmen je nach Jahreszeit und Witterung an – z. B. Winterräumung inklusive.' },
       ]}
       faqs={[
         { q: 'Was ist Graupflege genau?', a: 'Graupflege bezeichnet die Pflege und Reinigung von Hartflächen (Grauflächen) wie Pflasterwegen, Parkplätzen, Höfen und Plätzen – im Gegensatz zur Grünpflege.' },

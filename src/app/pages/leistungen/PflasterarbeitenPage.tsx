@@ -52,6 +52,7 @@ export default function PflasterarbeitenPage() {
         { step: '01', title: 'Besichtigung & Beratung', description: 'Wir kommen zu Ihnen vor Ort, messen die Fläche aus und beraten zur Materialwahl.' },
         { step: '02', title: 'Angebot & Planung', description: 'Sie erhalten innerhalb von 48 Stunden ein detailliertes Festpreisangebot.' },
         { step: '03', title: 'Fachgerechte Ausführung', description: 'Unser Team führt alle Pflasterarbeiten sauber und termingerecht durch.' },
+        { step: '04', title: 'Abnahme & Nachbetreuung', description: 'Gemeinsame Abnahme, Reinigung der Fläche und Hinweise zur Pflege – wir sind auch danach für Sie da.' },
       ]}
       faqs={[
         { q: 'Welche Pflastermaterialien bieten Sie an?', a: 'Wir verlegen Natursteine (Granit, Basalt, Sandstein), Betonpflaster, Klinker, Porzellanplatten und mehr. Bei der Materialwahl beraten wir Sie gerne.' },

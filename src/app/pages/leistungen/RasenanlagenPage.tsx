@@ -52,6 +52,7 @@ export default function RasenanlagenPage() {
         { step: '01', title: 'Besichtigung & Bodenanalyse', description: 'Wir analysieren Ihren Boden, planen die Fläche aus und wählen die passende Rasensorte.' },
         { step: '02', title: 'Bodenvorbereitung', description: 'Aushub, Planierung, Bodenverbesserung und Vordüngung schaffen die optimale Grundlage.' },
         { step: '03', title: 'Anlage & Erstpflege', description: 'Rollrasen oder Ansaat werden fachmännisch eingebracht – inkl. Anwässern und Erstpflege.' },
+        { step: '04', title: 'Einweisung & Nachbetreuung', description: 'Wir erklären Ihnen die optimale Rasenpflege und stehen bei Fragen auch nach der Anlage für Sie bereit.' },
       ]}
       faqs={[
         { q: 'Rollrasen oder Ansaat – was empfehlen Sie?', a: 'Rollrasen ist sofort nutzbar und hat ein sofortiges Ergebnis, ist aber teurer. Rasensaat ist günstiger, benötigt aber 6–10 Wochen bis zur vollen Nutzbarkeit. Wir beraten Sie.' },

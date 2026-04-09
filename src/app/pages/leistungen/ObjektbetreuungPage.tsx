@@ -52,6 +52,7 @@ export default function ObjektbetreuungPage() {
         { step: '01', title: 'Objektaufnahme & Bestandsanalyse', description: 'Wir nehmen Ihr Objekt systematisch auf, dokumentieren den Ist-Zustand und planen die Betreuung.' },
         { step: '02', title: 'Betreuungskonzept & Vertrag', description: 'Gemeinsam definieren wir Leistungsumfang und Intervalle – transparent und fair bepreist.' },
         { step: '03', title: 'Laufende Betreuung & Reporting', description: 'Regelmäßige Begehungen, schnelle Reaktion bei Bedarf und regelmäßige Berichte an Sie.' },
+        { step: '04', title: 'Optimierung & Partnerschaft', description: 'Wir entwickeln unsere Leistungen kontinuierlich weiter – für eine langfristige und verlässliche Partnerschaft.' },
       ]}
       faqs={[
         { q: 'Für welche Objekte bieten Sie Objektbetreuung an?', a: 'Wir betreuen Wohnanlagen, Bürogebäude, Gewerbeparks, Einkaufszentren und einzelne Wohn- oder Gewerbeeinheiten.' },

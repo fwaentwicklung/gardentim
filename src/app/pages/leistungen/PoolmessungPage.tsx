@@ -52,6 +52,7 @@ export default function PoolmessungPage() {
         { step: '01', title: 'Messungstermin', description: 'Wir kommen zu Ihrem Pool und entnehmen Wasserproben an verschiedenen Stellen für aussagekräftige Ergebnisse.' },
         { step: '02', title: 'Analyse & Ergebnis', description: 'Mit professionellen Messgeräten analysieren wir alle relevanten Parameter und erklären die Werte.' },
         { step: '03', title: 'Dosierung & Empfehlung', description: 'Wir dosieren alle benötigten Chemikalien und geben Ihnen konkrete Pflegeempfehlungen.' },
+        { step: '04', title: 'Regelmäßige Folgemessungen', description: 'Auf Wunsch kommen wir wöchentlich oder zweiwöchentlich – für dauerhaft perfekte Wasserqualität.' },
       ]}
       faqs={[
         { q: 'Wie oft sollte Poolwasser gemessen werden?', a: 'Im aktiven Betrieb mindestens einmal pro Woche, idealerweise zweimal. Bei stark genutzten Pools oder Hochsommer auch täglich.' },

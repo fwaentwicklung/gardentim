@@ -52,6 +52,7 @@ export default function ZaunarbeitenPage() {
         { step: '01', title: 'Besichtigung & Beratung', description: 'Wir kommen zu Ihnen, messen Ihr Grundstück ab und beraten zur optimalen Zaunlösung.' },
         { step: '02', title: 'Angebot & Planung', description: 'Innerhalb von 48 Stunden erhalten Sie ein transparentes Festpreisangebot.' },
         { step: '03', title: 'Montage & Übergabe', description: 'Unser Team baut Ihren Zaun fachgerecht und sauber auf – pünktlich zum vereinbarten Termin.' },
+        { step: '04', title: 'Abnahme & Qualitätskontrolle', description: 'Gemeinsame Abnahme des fertigen Zauns – inkl. Pflege- und Wartungshinweise für lange Haltbarkeit.' },
       ]}
       faqs={[
         { q: 'Welche Zaunarten bauen Sie?', a: 'Wir bauen Holzzäune, Doppelstabmattenzäune, Gabionen, Sichtschutzzäune aus WPC und Metall sowie Einfahrtstore.' },

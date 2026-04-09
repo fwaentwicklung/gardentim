@@ -52,6 +52,7 @@ export default function BaumschnittPage() {
         { step: '01', title: 'Besichtigung vor Ort', description: 'Wir besichtigen Ihre Bäume, beurteilen den Pflegebedarf und erstellen ein passendes Angebot.' },
         { step: '02', title: 'Angebot & Terminplanung', description: 'Sie erhalten ein transparentes Angebot mit optimalem Schnittzeitraum für Ihre Bäume.' },
         { step: '03', title: 'Fachgerechte Durchführung', description: 'Unsere Baumkletterer führen alle Arbeiten sicher und sauber durch – inkl. Schnittgutentsorgung.' },
+        { step: '04', title: 'Dokumentation & Folgebetreuung', description: 'Sie erhalten eine Schnittdokumentation und wir empfehlen den nächsten Pflegetermin für gesunde Bäume.' },
       ]}
       faqs={[
         { q: 'Wann ist der beste Zeitpunkt für Baumschnitt?', a: 'Leichte Pflegeschnitte sind ganzjährig möglich. Stärkere Schnitte sollten in der Vegetationsruhe (Oktober bis Februar) erfolgen. Wir beraten Sie zum optimalen Zeitpunkt.' },

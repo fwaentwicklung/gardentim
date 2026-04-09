@@ -52,6 +52,7 @@ export default function GlasreinigungPage() {
         { step: '01', title: 'Objektbesichtigung', description: 'Wir begutachten Ihr Objekt und erstellen ein maßgeschneidertes Reinigungskonzept.' },
         { step: '02', title: 'Angebot & Vertragsabschluss', description: 'Transparentes Angebot mit klaren Preisen und definierten Leistungsumfängen.' },
         { step: '03', title: 'Regelmäßige Reinigung', description: 'Pünktlich, zuverlässig und nach höchsten Qualitätsstandards – immer mit Qualitätskontrolle.' },
+        { step: '04', title: 'Dokumentation & Reporting', description: 'Alle Einsätze werden dokumentiert – Sie erhalten auf Wunsch monatliche Berichte über erbrachte Leistungen.' },
       ]}
       faqs={[
         { q: 'Wie oft empfehlen Sie Glasreinigung?', a: 'Für Gewerbeobjekte empfehlen wir je nach Lage wöchentliche bis monatliche Reinigung. Wir beraten Sie zur optimalen Frequenz.' },

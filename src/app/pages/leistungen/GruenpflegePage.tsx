@@ -52,6 +52,7 @@ export default function GruenpflegePage() {
         { step: '01', title: 'Besichtigung & Pflegeplan', description: 'Wir besichtigen Ihre Anlage und erstellen einen maßgeschneiderten Jahrespflegeplan.' },
         { step: '02', title: 'Angebot & Vertragsabschluss', description: 'Transparentes Angebot mit klaren Leistungspositionen und festem Jahrespreis.' },
         { step: '03', title: 'Regelmäßige Pflege', description: 'Pünktliche Durchführung aller Leistungen – mit Qualitätskontrolle und Dokumentation.' },
+        { step: '04', title: 'Jahresabrechnung & Verlängerung', description: 'Transparente Jahresabrechnung, auf Wunsch einfache Vertragsverlängerung oder Leistungsanpassung.' },
       ]}
       faqs={[
         { q: 'Für welche Objekte bieten Sie Grünpflege an?', a: 'Wir pflegen Grünanlagen von Wohnanlagen, Bürogebäuden, Gewerbeparks, Schulen, Kliniken und öffentlichen Flächen.' },
