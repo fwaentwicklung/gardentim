@@ -6,6 +6,7 @@ import Jobs from './pages/Jobs';
 import Kontakt from './pages/Kontakt';
 import Datenschutz from './pages/Datenschutz';
 import Impressum from './pages/Impressum';
+import Danke from './pages/Danke';
 import Admin from './pages/Admin';
 import NotFound from './pages/NotFound';
 import LeistungenOverview from './pages/leistungen/LeistungenOverview';
@@ -76,6 +77,7 @@ export const router = createBrowserRouter([
       { path: 'kontakt', Component: Kontakt },
       { path: 'datenschutz', Component: Datenschutz },
       { path: 'impressum', Component: Impressum },
+      { path: 'danke', Component: Danke },
       { path: '*', Component: NotFound },
     ],
   },

@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
-import { CheckCircle, Send, AlertCircle } from 'lucide-react';
+import { Link, useNavigate } from 'react-router';
+import { Send, AlertCircle } from 'lucide-react';
 import { createLead } from '../lib/api';
-import { COMPANY } from '../lib/company';
 
 interface LeadFormProps {
   title?: string;
@@ -40,6 +39,7 @@ const services = [
 ];
 
 export default function LeadForm({ title, subtitle, servicePreset, variant = 'light' }: LeadFormProps) {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -49,7 +49,6 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
     dsgvo: false,
   });
   const [errors, setErrors] = useState<Record<string, string>>({});
-  const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [serverError, setServerError] = useState('');
 
@@ -77,7 +76,7 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
     setLoading(true);
     try {
       await createLead(formData);
-      setSubmitted(true);
+      navigate('/danke');
     } catch (err) {
       console.error('Fehler beim Senden der Anfrage:', err);
       setServerError('Die Anfrage konnte nicht gesendet werden. Bitte rufen Sie uns direkt an.');
@@ -98,34 +97,6 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
   const labelClass = `block text-xs font-bold uppercase tracking-wider mb-2 ${
     isDark ? 'text-[#bcff83]' : 'text-[#003f2e]'
   }`;
-
-  if (submitted) {
-    return (
-      <div className={`rounded-2xl p-10 text-center ${isDark ? 'bg-white/10' : 'bg-white shadow-lg border border-gray-100'}`}>
-        <div className="w-16 h-16 bg-[#bcff83] rounded-full flex items-center justify-center mx-auto mb-4">
-          <CheckCircle size={32} className="text-[#003f2e]" />
-        </div>
-        <h3 className={`text-xl font-bold mb-3 ${isDark ? 'text-white' : 'text-[#003f2e]'}`}>
-          Vielen Dank für Ihre Anfrage!
-        </h3>
-        <p className={`text-sm leading-relaxed mb-6 ${isDark ? 'text-[#98c4be]' : 'text-gray-600'}`}>
-          Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.
-          Sie können uns auch direkt unter{' '}
-          <a href={COMPANY.phoneTel} className="text-[#2d746d] font-semibold">{COMPANY.phonePretty}</a> erreichen.
-        </p>
-        <button
-          onClick={() => {
-            setSubmitted(false);
-            setFormData({ name: '', email: '', phone: '', service: '', message: '', dsgvo: false });
-            setErrors({});
-          }}
-          className="bg-[#bcff83] text-[#003f2e] px-6 py-2.5 rounded-lg font-bold text-sm hover:bg-[#a8f060] transition-colors"
-        >
-          Neue Anfrage
-        </button>
-      </div>
-    );
-  }
 
   return (
     <div className={`rounded-2xl p-8 ${isDark ? '' : 'bg-white shadow-lg border border-gray-100'}`}>
