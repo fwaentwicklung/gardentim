@@ -12,6 +12,26 @@
       <link rel="shortcut icon" href="/favicon.png" />
       <meta property="og:image" content="/favicon.png" />
 
+      <!-- Google Ads: Consent Mode v2 – alles standardmäßig verweigert (DSGVO-konform) -->
+      <!-- Das Tag wird geladen, sendet aber KEINE Daten bis zur expliziten Einwilligung -->
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('consent', 'default', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+          analytics_storage: 'denied',
+          wait_for_update: 500
+        });
+      </script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17024588965"></script>
+      <script>
+        gtag('js', new Date());
+        gtag('config', 'AW-17024588965');
+      </script>
+      <link rel="preconnect" href="https://googletagmanager.com" />
+
       <!-- Preconnect für schnellere Verbindungen -->
       <link rel="preconnect" href="https://ajvsmccxroheacmxnwew.supabase.co" crossorigin />
       <link rel="preconnect" href="https://fonts.googleapis.com" />

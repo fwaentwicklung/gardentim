@@ -11,6 +11,17 @@ interface ConsentState {
 
 const STORAGE_KEY = 'gardentime_cookie_consent';
 
+function updateGtagConsent(analytics: boolean, marketing: boolean) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('consent', 'update', {
+      ad_storage: marketing ? 'granted' : 'denied',
+      ad_user_data: marketing ? 'granted' : 'denied',
+      ad_personalization: marketing ? 'granted' : 'denied',
+      analytics_storage: analytics ? 'granted' : 'denied',
+    });
+  }
+}
+
 function saveConsent(analytics: boolean, marketing: boolean) {
   const consent: ConsentState = {
     essential: true,
@@ -19,6 +30,7 @@ function saveConsent(analytics: boolean, marketing: boolean) {
     timestamp: new Date().toISOString(),
   };
   localStorage.setItem(STORAGE_KEY, JSON.stringify(consent));
+  updateGtagConsent(analytics, marketing);
 }
 
 function loadConsent(): ConsentState | null {

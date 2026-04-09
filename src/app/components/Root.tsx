@@ -7,6 +7,22 @@ import CookieBanner from './CookieBanner';
 export default function Root() {
   const { pathname } = useLocation();
 
+  // Gespeicherten Cookie-Consent beim Start an Google weitergeben
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem('gardentime_cookie_consent');
+      if (stored && typeof window.gtag === 'function') {
+        const consent = JSON.parse(stored);
+        window.gtag('consent', 'update', {
+          ad_storage: consent.marketing ? 'granted' : 'denied',
+          ad_user_data: consent.marketing ? 'granted' : 'denied',
+          ad_personalization: consent.marketing ? 'granted' : 'denied',
+          analytics_storage: consent.analytics ? 'granted' : 'denied',
+        });
+      }
+    } catch {}
+  }, []);
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [pathname]);
