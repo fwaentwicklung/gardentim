@@ -57,7 +57,7 @@ export default function HeckenschnittPage() {
       ]}
       faqs={[
         { q: 'Wann ist der beste Zeitpunkt für den Heckenschnitt?', a: 'Der Hauptschnitt erfolgt idealerweise Ende Juni bis Mitte Juli (nach dem Johannistag). Ein zweiter Schnitt ist im September möglich. Bitte beachten: Während der Vogelbrutzeit (1. März – 30. September) sind starke Schnitte gesetzlich eingeschränkt.' },
-        { q: 'Was kostet Heckenschnitt in Frankfurt?', a: 'Heckenschnitt wird meist nach Laufmeter berechnet: ab 5–12 €/lm je nach Höhe und Breite. Für kleine Projekte gibt es Mindestpauschalen. Wir erstellen Ihnen ein kostenloses Angebot nach Besichtigung.' },
+        { q: 'Was kostet Heckenschnitt in Frankfurt?', a: 'Der Preis richtet sich nach Länge, Höhe und Art der Hecke sowie dem Aufwand für die Entsorgung. Wir erstellen Ihnen nach einer kurzen Besichtigung ein kostenloses Angebot.' },
         { q: 'Schneiden Sie auch hohe Bäume?', a: 'Ja, unser Team führt Baumschnitt bis 15m Höhe durch. Für größere Bäume oder Fällarbeiten kooperieren wir mit zertifizierten Forstbetrieben.' },
         { q: 'Muss ich während der Arbeiten zu Hause sein?', a: 'Nein. Viele unserer Kunden sind bei den Einsätzen nicht zuhause. Wir informieren Sie vorher und hinterlassen Grundstück und Garten sauber.' },
       ]}

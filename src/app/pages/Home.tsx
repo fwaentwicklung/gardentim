@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: 'Was kostet ein Gartenpflegedienst?',
-    a: 'Die Kosten hängen von der Größe des Gartens, dem Umfang der Leistungen und der Häufigkeit ab. Für eine Regelpflege beginnen unsere Preise bei 89 €/Einsatz. Gerne erstellen wir Ihnen ein maßgeschneidertes Angebot nach einem Besichtigungstermin.',
+    a: 'Die Kosten hängen von der Größe des Gartens, dem Umfang der Leistungen und der Häufigkeit ab. Gerne erstellen wir Ihnen ein kostenloses, maßgeschneidertes Angebot nach einem Besichtigungstermin.',
   },
 ];
 

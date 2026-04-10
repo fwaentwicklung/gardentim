@@ -58,7 +58,7 @@ export default function GartenpflegePage() {
       ]}
       faqs={[
         { q: 'Wie oft sollte der Rasen gemäht werden?', a: 'In der Hauptsaison (April bis Oktober) empfehlen wir eine Mahd alle 1–2 Wochen. Im Frühjahr und Herbst reicht oft alle 2–3 Wochen. Wir passen die Häufigkeit an Ihr Wachstum und Ihre Wünsche an.' },
-        { q: 'Was kostet Gartenpflege in Frankfurt?', a: 'Unsere Preise beginnen ab 89 € pro Einsatz für kleinere Gärten. Der Preis hängt von der Größe, dem Umfang und der Häufigkeit ab. Bei Dauerpflegeverträgen gewähren wir attraktive Rabatte. Wir erstellen Ihnen gerne ein kostenloses Angebot.' },
+        { q: 'Was kostet Gartenpflege in Frankfurt?', a: 'Der Preis hängt von der Größe des Gartens, dem Umfang und der Häufigkeit der Einsätze ab. Bei Dauerpflegeverträgen gewähren wir attraktive Rabatte. Wir erstellen Ihnen gerne ein kostenloses, unverbindliches Angebot.' },
         { q: 'Führen Sie auch Gartenarbeiten in Abwesenheit durch?', a: 'Ja, selbstverständlich. Die meisten unserer Stammkunden sind bei unseren Einsätzen nicht anwesend. Wir informieren Sie vorab über den Termin und hinterlassen alles ordentlich.' },
         { q: 'Entsorgen Sie den Grünschnitt?', a: 'Auf Wunsch entsorgen wir den gesamten Grünschnitt, Laub und Gartenabfall fachgerecht. Dies kann als Zusatzleistung im Angebot berücksichtigt werden.' },
         { q: 'Sind Sie auch für Gewerbekunden tätig?', a: 'Ja, wir betreuen Wohnanlagen, Bürokomplexe, Hotels und Gewerbeparks in Frankfurt und dem Rhein-Main-Gebiet. Für Gewerbeobjekte bieten wir Jahresverträge mit festgelegten Leistungsstandards an.' },

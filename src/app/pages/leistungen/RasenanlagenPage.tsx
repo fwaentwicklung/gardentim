@@ -58,7 +58,7 @@ export default function RasenanlagenPage() {
         { q: 'Rollrasen oder Ansaat – was empfehlen Sie?', a: 'Rollrasen ist sofort nutzbar und hat ein sofortiges Ergebnis, ist aber teurer. Rasensaat ist günstiger, benötigt aber 6–10 Wochen bis zur vollen Nutzbarkeit. Wir beraten Sie.' },
         { q: 'Wann ist die beste Zeit für Rasenanlage?', a: 'Rasen lässt sich von April bis Oktober anlegen. Ideale Zeiten sind Frühjahr (April/Mai) und Frühherbst (August/September).' },
         { q: 'Wie groß muss der Garten mindestens sein?', a: 'Wir legen Rasenflächen ab ca. 30 m² an. Für kleinste Flächen oder komplexe Formen lohnt sich oft Rollrasen.' },
-        { q: 'Was kostet eine Rasenanlage?', a: 'Rollrasen beginnt bei ca. 15–25 €/m² (inkl. Verlegung), Ansaat ist günstiger. Bodenvorbereitung ist je nach Aufwand extra. Angebot ist kostenlos.' },
+        { q: 'Was kostet eine Rasenanlage?', a: 'Die Kosten richten sich nach Fläche, Methode (Rollrasen oder Ansaat) und Bodenaufwand. Wir erstellen Ihnen nach einer Besichtigung ein kostenloses und transparentes Angebot.' },
       ]}
       cta={{ headline: 'Rasenanlagen in Frankfurt anfragen', subline: 'Kostenlose Beratung & Angebot innerhalb von 48 Stunden.', servicePreset: 'Rasenanlagen' }}
     />

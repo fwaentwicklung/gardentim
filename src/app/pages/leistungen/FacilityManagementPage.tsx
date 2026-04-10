@@ -58,7 +58,7 @@ export default function FacilityManagementPage() {
       ]}
       faqs={[
         { q: 'Für welche Objekte bieten Sie FM in Frankfurt an?', a: 'Wir betreuen Bürokomplexe, Wohnanlagen (WEG und Mietobjekte), Einkaufszentren, Hotels, Logistikzentren und öffentliche Einrichtungen in Frankfurt und dem gesamten Rhein-Main-Gebiet.' },
-        { q: 'Was kostet Facility Management in Frankfurt?', a: 'Die Kosten hängen von der Objektgröße, den Leistungen und der Häufigkeit ab. Wir bieten individuelle Jahresfestpreise – in der Regel ab 500 €/Monat für kleinere Objekte. Gerne erstellen wir Ihnen ein Angebot nach Objektbegehung.' },
+        { q: 'Was kostet Facility Management in Frankfurt?', a: 'Die Kosten hängen von der Objektgröße, dem Leistungsumfang und der Häufigkeit der Einsätze ab. Wir bieten individuelle Jahresfestpreise – gerne erstellen wir Ihnen nach einer kostenlosen Objektbegehung ein maßgeschneidertes Angebot.' },
         { q: 'Übernehmen Sie auch laufende Hausverwaltungsaufgaben?', a: 'Wir übernehmen die operative Durchführung aller Facility-Leistungen. Administrative WEG-Verwaltung ist nicht unser Kerngeschäft, jedoch kooperieren wir eng mit Hausverwaltungen in Frankfurt.' },
         { q: 'Wie schnell können Sie einen FM-Vertrag starten?', a: 'In der Regel können wir innerhalb von 2–4 Wochen nach Vertragsunterzeichnung mit dem Betrieb beginnen. Bei dringendem Bedarf auch früher – sprechen Sie uns an.' },
       ]}

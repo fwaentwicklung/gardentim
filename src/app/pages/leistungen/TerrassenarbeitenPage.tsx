@@ -58,7 +58,7 @@ export default function TerrassenarbeitenPage() {
         { q: 'Welches Terrassenmaterial empfehlen Sie?', a: 'Das hängt von Nutzung, Budget und Optik ab. Naturstein ist langlebig und hochwertig, WPC wartungsarm, Holz natürlich schön. Wir beraten Sie gerne.' },
         { q: 'Wie lange dauert der Bau einer Terrasse?', a: 'Eine typische Terrasse (30–60 m²) ist in 2–5 Arbeitstagen fertig. Der genaue Zeitrahmen steht im Angebot.' },
         { q: 'Bauen Sie auch Überdachungen?', a: 'Ja, wir planen und bauen Terrassenüberdachungen aus Aluminium, Holz oder Stahl sowie Pergolen und freistehende Pavillons.' },
-        { q: 'Was kostet eine Terrasse?', a: 'Je nach Material und Größe beginnen die Kosten bei ca. 80–250 €/m² inkl. Unterkonstruktion und Verlegung. Angebot ist kostenlos.' },
+        { q: 'Was kostet eine Terrasse?', a: 'Die Kosten hängen von Material, Größe und Untergrund ab. Nach einer kostenlosen Besichtigung erhalten Sie von uns ein verbindliches Festpreisangebot.' },
       ]}
       cta={{ headline: 'Terrassenbau in Frankfurt anfragen', subline: 'Kostenloses Angebot in 48 Stunden.', servicePreset: 'Terrassenarbeiten' }}
     />

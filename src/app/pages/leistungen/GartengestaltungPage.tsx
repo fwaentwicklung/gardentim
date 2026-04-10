@@ -57,7 +57,7 @@ export default function GartengestaltungPage() {
       ]}
       faqs={[
         { q: 'Wie lange dauert eine Gartengestaltung?', a: 'Das hängt vom Umfang ab. Ein einfaches Umgestaltungsprojekt dauert 2–5 Tage, ein kompletter Neugarten je nach Größe 1–4 Wochen. Wir geben Ihnen bei der Planung einen konkreten Zeitplan.' },
-        { q: 'Was kostet Gartengestaltung in Frankfurt?', a: 'Kleine Umgestaltungen beginnen ab ca. 1.500 €. Ein kompletter Neugarten liegt je nach Größe und Materialwahl zwischen 5.000 € und 50.000 €. Wir arbeiten mit verbindlichen Festpreisangeboten.' },
+        { q: 'Was kostet Gartengestaltung in Frankfurt?', a: 'Die Kosten hängen von Umfang, Materialwahl und Größe des Projekts ab. Wir arbeiten mit verbindlichen Festpreisangeboten – nach einer kostenlosen Erstberatung erhalten Sie von uns eine transparente Kostenaufstellung.' },
         { q: 'Übernehmen Sie auch die Genehmigungen für Teiche oder Bauten?', a: 'Für kleinere Gartenbaumaßnahmen sind in Frankfurt meist keine Genehmigungen erforderlich. Bei größeren Anlagen oder Bebauungsplänen beraten wir Sie und übernehmen bei Bedarf die Genehmigungseinholung.' },
         { q: 'Welche Pflanzen eignen sich für Frankfurts Klima?', a: 'Frankfurt hat ein vergleichsweise mildes Stadtklima. Geeignet sind mediterrane Kräuter, heimische Stauden, Ziergräser und viele Rosenarten. Wir erstellen Ihnen ein Bepflanzungskonzept, das zu Ihrem Garten und Ihrem Pflegeaufwand passt.' },
       ]}

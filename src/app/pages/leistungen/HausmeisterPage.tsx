@@ -57,7 +57,7 @@ export default function HausmeisterPage() {
       ]}
       faqs={[
         { q: 'Was unterscheidet einen guten Hausmeisterservice in Frankfurt?', a: 'Schnelle Erreichbarkeit, technische Kompetenz, lückenlose Dokumentation und ein vertrauensvoller Umgang mit Mietern. Garden Time bietet all das – mit festem Ansprechpartner und reaktionsschnellem Team.' },
-        { q: 'Was kostet ein Hausmeisterservice in Frankfurt?', a: 'Monatliche Betreuungsverträge beginnen ab 250 €/Monat für kleine Objekte. Der Preis hängt von der Objektgröße, dem Umfang und den gewünschten Reaktionszeiten ab. Gerne erstellen wir ein kostenloses Angebot.' },
+        { q: 'Was kostet ein Hausmeisterservice in Frankfurt?', a: 'Der Preis hängt von der Objektgröße, dem Leistungsumfang und den gewünschten Reaktionszeiten ab. Gerne erstellen wir Ihnen nach einer kostenlosen Objektbegehung ein individuelles Angebot.' },
         { q: 'Übernehmen Sie auch Notfalleinsätze?', a: 'Ja, unser Notfalldienst ist 24/7 erreichbar. Notfalleinsätze (z.B. Rohrbruch, Einbruch, Heizungsausfall) werden sofort koordiniert und bearbeitet.' },
         { q: 'Arbeiten Sie mit Hausverwaltungen zusammen?', a: 'Ja, wir kooperieren eng mit Hausverwaltungen und WEG-Verwaltern in Frankfurt. Wir übernehmen die operative Hausmeistertätigkeit und kommunizieren direkt mit der Verwaltung.' },
       ]}
