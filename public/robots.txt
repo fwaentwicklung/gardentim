@@ -3,5 +3,6 @@ Allow: /
 
 Disallow: /admin
 Disallow: /admin/
+Disallow: /danke
 
 Sitemap: https://www.gardentime-frankfurt.de/sitemap.xml
