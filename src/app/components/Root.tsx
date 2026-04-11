@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import CookieBanner from './CookieBanner';
+import WhatsAppButton from './WhatsAppButton';
 
 export default function Root() {
   const { pathname } = useLocation();
@@ -34,6 +35,7 @@ export default function Root() {
         <Outlet />
       </main>
       <Footer />
+      <WhatsAppButton />
       <CookieBanner />
     </div>
   );
