@@ -10,6 +10,20 @@ const WA_ICON = (
   </svg>
 );
 
+function trackWhatsAppConversion() {
+  try {
+    const stored = localStorage.getItem('gardentime_cookie_consent');
+    const consent = stored ? JSON.parse(stored) : null;
+    if (consent?.marketing && typeof window.gtag === 'function') {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17024588965/1xW7CLLE2pocEKW5-rU_',
+        value: 1.0,
+        currency: 'EUR',
+      });
+    }
+  } catch {}
+}
+
 export default function WhatsAppButton() {
   const [popupOpen, setPopupOpen] = useState(false);
   // Tooltip erscheint nach 4s, verschwindet nach 8s automatisch
@@ -79,6 +93,7 @@ export default function WhatsAppButton() {
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsAppConversion}
             className="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white py-3 rounded-xl font-bold text-sm hover:bg-[#1ebe5d] transition-colors shadow-md"
           >
             {WA_ICON}
