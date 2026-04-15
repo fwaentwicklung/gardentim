@@ -99,7 +99,7 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
   }`;
 
   return (
-    <div className={`rounded-2xl p-8 ${isDark ? '' : 'bg-white shadow-lg border border-gray-100'}`}>
+    <div className={`rounded-2xl p-4 sm:p-6 ${isDark ? '' : 'bg-white shadow-lg border border-gray-100'}`}>
       {title && (
         <div className="mb-6">
           <h2 className={`font-bold text-2xl mb-2 ${isDark ? 'text-white' : 'text-[#003f2e]'}`}>{title}</h2>
@@ -115,7 +115,7 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
       )}
 
       <form onSubmit={handleSubmit} noValidate>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+        <div className="grid grid-cols-1 min-[480px]:grid-cols-2 gap-3 sm:gap-4 mb-4">
           <div>
             <label className={labelClass}>Ihr Name *</label>
             <input
@@ -164,7 +164,7 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
           </div>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-4">
           <label className="flex items-start gap-3 cursor-pointer">
             <input
               type="checkbox"

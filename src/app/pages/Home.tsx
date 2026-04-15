@@ -84,24 +84,24 @@ export default function Home() {
           )}
           <div className="absolute inset-0 bg-gradient-to-r from-[#003f2e]/95 via-[#003f2e]/80 to-[#003f2e]/60 lg:to-transparent" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-          <div className="grid lg:grid-cols-2 gap-10 items-center">
-            {/* Left: Headline + Trust */}
-            <div>
-              <div className="inline-flex items-center gap-2 bg-[#bcff83]/20 border border-[#bcff83]/40 text-[#bcff83] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-24">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+            {/* Headline + Trust – auf Mobile nach unten, auf Desktop links */}
+            <div className="order-2 lg:order-1">
+              <div className="hidden lg:inline-flex items-center gap-2 bg-[#bcff83]/20 border border-[#bcff83]/40 text-[#bcff83] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
                 <Leaf size={12} />
                 Frankfurt & Rhein-Main-Gebiet
               </div>
-              <h1 className="text-white mb-5" style={{ fontSize: 'clamp(1.9rem, 4.5vw, 3.2rem)', fontWeight: 900, lineHeight: 1.1 }}>
+              <h1 className="text-white mb-4" style={{ fontSize: 'clamp(1.6rem, 4.5vw, 3.2rem)', fontWeight: 900, lineHeight: 1.15 }}>
                 Ihr Experte für<br />
                 <span className="text-[#bcff83]">Gartenpflege &</span><br />
                 Facility Management
               </h1>
-              <p className="text-white/80 text-base leading-relaxed mb-8 max-w-lg">
+              <p className="text-white/80 text-sm lg:text-base leading-relaxed mb-6 max-w-lg">
                 Professionelle Gartenpflege, Fensterreinigung und Facility Management
                 für Privatkunden und Gewerbe in Frankfurt. Zuverlässig seit über 15 Jahren.
               </p>
-              <div className="flex flex-col gap-3 mb-8">
+              <div className="flex flex-col gap-2 mb-6">
                 {[
                   '✓ Kostenlose Besichtigung & Angebot in 24h',
                   '✓ Versicherte Fachkräfte – pünktlich & diskret',
@@ -114,19 +114,19 @@ export default function Home() {
               </div>
               <a
                 href={COMPANY.phoneTel}
-                className="inline-flex items-center gap-2 bg-white/15 border border-white/30 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-white/25 transition-all"
+                className="inline-flex items-center gap-2 bg-white/15 border border-white/30 text-white px-5 py-3 rounded-xl font-bold text-sm hover:bg-white/25 transition-all"
               >
                 <Phone size={16} />
                 {COMPANY.phonePretty}
               </a>
             </div>
 
-            {/* Right: Form direkt im Hero */}
-            <div className="lg:ml-auto w-full max-w-md">
-              <div className="bg-white rounded-2xl shadow-2xl p-6 border border-gray-100">
-                <div className="mb-5">
-                  <p className="text-[#003f2e] font-black text-xl mb-1">Kostenloses Angebot</p>
-                  <p className="text-gray-500 text-sm">Antwort innerhalb von 24 Stunden · 100% unverbindlich</p>
+            {/* Form – auf Mobile zuerst, auf Desktop rechts */}
+            <div className="order-1 lg:order-2 lg:ml-auto w-full lg:max-w-md">
+              <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+                <div className="px-4 sm:px-6 pt-5 pb-2">
+                  <p className="text-[#003f2e] font-black text-lg sm:text-xl mb-0.5">Kostenloses Angebot</p>
+                  <p className="text-gray-500 text-xs sm:text-sm">Antwort in 24h · Kostenlos & unverbindlich</p>
                 </div>
                 <LeadForm />
               </div>
