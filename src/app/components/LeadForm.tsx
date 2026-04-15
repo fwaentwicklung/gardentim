@@ -164,17 +164,6 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
           </div>
         </div>
 
-        <div className="mb-5">
-          <label className={labelClass}>Ihre Nachricht</label>
-          <textarea
-            rows={4}
-            placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Frage..."
-            value={formData.message}
-            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className={`${inputClass('message')} resize-none`}
-          />
-        </div>
-
         <div className="mb-6">
           <label className="flex items-start gap-3 cursor-pointer">
             <input
@@ -184,12 +173,11 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
               className="mt-0.5 w-4 h-4 accent-[#003f2e] shrink-0"
             />
             <span className={`text-xs leading-relaxed ${isDark ? 'text-[#98c4be]' : 'text-gray-600'}`}>
-              Ich habe die{' '}
+              Ich stimme der{' '}
               <Link to="/datenschutz" className="text-[#2d746d] underline hover:no-underline font-medium">
                 Datenschutzerklärung
               </Link>{' '}
-              gelesen und stimme der Verarbeitung meiner personenbezogenen Daten zur Bearbeitung
-              meiner Anfrage zu. *
+              zu. *
             </span>
           </label>
           {errors.dsgvo && <p className="text-red-500 text-xs mt-1 ml-7 flex items-center gap-1"><AlertCircle size={12} />{errors.dsgvo}</p>}
@@ -198,7 +186,7 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
         <button
           type="submit"
           disabled={loading}
-          className="w-full bg-[#003f2e] text-[#bcff83] py-3.5 rounded-lg font-bold text-sm hover:bg-[#2d746d] transition-colors flex items-center justify-center gap-2 disabled:opacity-70"
+          className="w-full bg-[#003f2e] text-[#bcff83] py-4 rounded-lg font-bold text-base hover:bg-[#2d746d] transition-colors flex items-center justify-center gap-2 disabled:opacity-70 shadow-lg"
         >
           {loading ? (
             <span className="flex items-center gap-2">
@@ -211,13 +199,13 @@ export default function LeadForm({ title, subtitle, servicePreset, variant = 'li
           ) : (
             <>
               <Send size={16} />
-              Kostenlose Anfrage senden
+              Jetzt kostenloses Angebot anfordern
             </>
           )}
         </button>
 
         <p className={`text-center text-xs mt-3 ${isDark ? 'text-[#98c4be]' : 'text-gray-400'}`}>
-          * Pflichtfelder. Wir antworten innerhalb von 24 Stunden.
+          Kostenlos & unverbindlich · Antwort innerhalb von 24 Stunden
         </p>
       </form>
     </div>

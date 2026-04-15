@@ -30,6 +30,7 @@ import HausmeisterPage from './pages/leistungen/HausmeisterPage';
 import GebaeudereinigungPage from './pages/leistungen/GebaeudereinigungPage';
 import WinterdienstPage from './pages/leistungen/WinterdienstPage';
 import GlasreinigungPage from './pages/leistungen/GlasreinigungPage';
+import FensterputzerPage from './pages/leistungen/FensterputzerPage';
 import ObjektbetreuungPage from './pages/leistungen/ObjektbetreuungPage';
 import EmpfangsdienstePage from './pages/leistungen/EmpfangsdienstePage';
 import GruenpflegePage from './pages/leistungen/GruenpflegePage';
@@ -64,6 +65,7 @@ export const router = createBrowserRouter([
       { path: 'leistungen/gebaeudereinigung', Component: GebaeudereinigungPage },
       { path: 'leistungen/winterdienst', Component: WinterdienstPage },
       { path: 'leistungen/glasreinigung', Component: GlasreinigungPage },
+      { path: 'leistungen/fensterputzer', Component: FensterputzerPage },
       { path: 'leistungen/objektbetreuung', Component: ObjektbetreuungPage },
       { path: 'leistungen/empfangsdienste', Component: EmpfangsdienstePage },
       { path: 'leistungen/gruenpflege', Component: GruenpflegePage },

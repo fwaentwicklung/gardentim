@@ -4,6 +4,8 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import CookieBanner from './CookieBanner';
 import WhatsAppButton from './WhatsAppButton';
+import { COMPANY } from '../lib/company';
+import { Phone } from 'lucide-react';
 
 export default function Root() {
   const { pathname } = useLocation();
@@ -28,6 +30,8 @@ export default function Root() {
     window.scrollTo({ top: 0, behavior: 'instant' });
   }, [pathname]);
 
+  const hideStickyBar = pathname === '/danke' || pathname === '/admin';
+
   return (
     <div className="min-h-screen flex flex-col bg-[#f7f8f6]">
       <Navigation />
@@ -37,6 +41,17 @@ export default function Root() {
       <Footer />
       <WhatsAppButton />
       <CookieBanner />
+      {/* Sticky Mobile Phone Bar – nur auf kleinen Screens */}
+      {!hideStickyBar && (
+        <a
+          href={COMPANY.phoneTel}
+          className="fixed bottom-0 left-0 right-0 z-40 sm:hidden bg-[#003f2e] text-[#bcff83] flex items-center justify-center gap-2.5 py-4 text-sm font-bold shadow-2xl"
+          style={{ paddingBottom: 'max(1rem, env(safe-area-inset-bottom))' }}
+        >
+          <Phone size={18} />
+          Jetzt anrufen – {COMPANY.phonePretty}
+        </a>
+      )}
     </div>
   );
 }

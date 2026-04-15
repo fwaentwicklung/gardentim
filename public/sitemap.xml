@@ -140,9 +140,15 @@
   </url>
   <url>
     <loc>https://www.gardentime-frankfurt.de/leistungen/glasreinigung</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gardentime-frankfurt.de/leistungen/fensterputzer</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.gardentime-frankfurt.de/leistungen/objektbetreuung</loc>
