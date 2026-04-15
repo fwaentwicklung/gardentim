@@ -109,13 +109,13 @@ export default function ServicePageTemplate(props: ServicePageProps) {
               ))}
             </div>
             <div className="flex flex-wrap gap-4">
-              <Link
-                to="/kontakt"
+              <a
+                href="#anfrage"
                 className="inline-flex items-center gap-2 bg-[#bcff83] text-[#003f2e] px-7 py-3.5 rounded-xl font-black text-sm hover:bg-[#a8f060] transition-all shadow-lg"
               >
                 Kostenloses Angebot
                 <ArrowRight size={16} />
-              </Link>
+              </a>
               <a
                 href={COMPANY.phoneTel}
                 className="flex items-center gap-2 bg-white/10 text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-white/20 transition-colors"
@@ -123,6 +123,26 @@ export default function ServicePageTemplate(props: ServicePageProps) {
                 <Phone size={16} />
                 {COMPANY.phonePretty}
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Inline-Formular direkt nach Hero */}
+      <section id="anfrage" className="py-10 bg-[#f7f8f6] border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <p className="text-[#2d746d] text-xs font-black uppercase tracking-widest mb-2">Jetzt anfragen</p>
+              <h2 className="text-[#003f2e] font-black text-2xl lg:text-3xl mb-2 leading-tight">
+                Kostenloses Angebot anfordern
+              </h2>
+              <p className="text-gray-500 text-sm">
+                Antwort innerhalb von 24 Stunden · Unverbindlich · Keine versteckten Kosten
+              </p>
+            </div>
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
+              <LeadForm servicePreset={cta.servicePreset} />
             </div>
           </div>
         </div>
