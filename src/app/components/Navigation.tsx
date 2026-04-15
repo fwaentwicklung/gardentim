@@ -23,6 +23,7 @@ const gartenLinks = [
 const facilityLinks = [
   { label: 'Facility Management', path: '/leistungen/facility-management', icon: Building2 },
   { label: 'Glas- & Gebäudereinigung', path: '/leistungen/glasreinigung', icon: Leaf },
+  { label: 'Fensterputzer Privathaushalt', path: '/leistungen/fensterputzer', icon: Leaf },
   { label: 'Hausmeister & -Techniker', path: '/leistungen/hausmeisterservice', icon: Leaf },
   { label: 'Objektbetreuung', path: '/leistungen/objektbetreuung', icon: Building2 },
   { label: 'Empfangsdienste & Sicherheit', path: '/leistungen/empfangsdienste', icon: Leaf },
@@ -40,9 +41,9 @@ const gartenMenuLinks = gartenLinks.filter(l => [
 ].includes(l.path));
 
 const facilityMenuLinks = facilityLinks.filter(l => [
-  '/leistungen/facility-management', '/leistungen/glasreinigung', '/leistungen/hausmeisterservice',
-  '/leistungen/objektbetreuung', '/leistungen/empfangsdienste', '/leistungen/gruenpflege',
-  '/leistungen/graupflege', '/leistungen/poolreinigung', '/leistungen/poolmessung',
+  '/leistungen/facility-management', '/leistungen/glasreinigung', '/leistungen/fensterputzer',
+  '/leistungen/hausmeisterservice', '/leistungen/objektbetreuung', '/leistungen/empfangsdienste',
+  '/leistungen/gruenpflege', '/leistungen/graupflege', '/leistungen/poolreinigung', '/leistungen/poolmessung',
 ].includes(l.path));
 
 const allServicePaths = [...gartenLinks, ...facilityLinks].map(l => l.path);
