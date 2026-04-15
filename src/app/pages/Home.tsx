@@ -71,9 +71,8 @@ export default function Home() {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-[#003f2e]">
+      <section className="relative overflow-hidden bg-[#003f2e]">
         <div className="absolute inset-0">
-          {/* Hero-Bild: immer rendern + höchste Priorität für optimalen LCP */}
           {heroImg && (
             <img
               src={heroImg}
@@ -83,46 +82,54 @@ export default function Home() {
               decoding="async"
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#003f2e]/90 via-[#003f2e]/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#003f2e]/95 via-[#003f2e]/80 to-[#003f2e]/60 lg:to-transparent" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 bg-[#bcff83]/20 border border-[#bcff83]/40 text-[#bcff83] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
-              <Leaf size={12} />
-              Frankfurt & Rhein-Main-Gebiet
-            </div>
-            <h1 className="text-white mb-6" style={{ fontSize: 'clamp(2rem, 5vw, 3.5rem)', fontWeight: 900, lineHeight: 1.1 }}>
-              Ihr Experte für<br />
-              <span className="text-[#bcff83]">Gartenpflege &</span><br />
-              Facility Management
-            </h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-8 max-w-xl">
-              Professionelle Gartenpflege, Gartengestaltung und umfassendes Facility Management
-              für Privatkunden und Gewerbe in Frankfurt am Main. Zuverlässig, seriös und
-              DSGVO-konform seit über 15 Jahren.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-8">
-              <Link
-                to="/kontakt"
-                className="bg-[#bcff83] text-[#003f2e] px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#a8f060] transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
-              >
-                Kostenloses Angebot anfordern
-              </Link>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            {/* Left: Headline + Trust */}
+            <div>
+              <div className="inline-flex items-center gap-2 bg-[#bcff83]/20 border border-[#bcff83]/40 text-[#bcff83] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                <Leaf size={12} />
+                Frankfurt & Rhein-Main-Gebiet
+              </div>
+              <h1 className="text-white mb-5" style={{ fontSize: 'clamp(1.9rem, 4.5vw, 3.2rem)', fontWeight: 900, lineHeight: 1.1 }}>
+                Ihr Experte für<br />
+                <span className="text-[#bcff83]">Gartenpflege &</span><br />
+                Facility Management
+              </h1>
+              <p className="text-white/80 text-base leading-relaxed mb-8 max-w-lg">
+                Professionelle Gartenpflege, Fensterreinigung und Facility Management
+                für Privatkunden und Gewerbe in Frankfurt. Zuverlässig seit über 15 Jahren.
+              </p>
+              <div className="flex flex-col gap-3 mb-8">
+                {[
+                  '✓ Kostenlose Besichtigung & Angebot in 24h',
+                  '✓ Versicherte Fachkräfte – pünktlich & diskret',
+                  '✓ 800+ zufriedene Kunden in Frankfurt',
+                ].map((item) => (
+                  <div key={item} className="flex items-center gap-2 text-white/90 text-sm font-medium">
+                    {item}
+                  </div>
+                ))}
+              </div>
               <a
                 href={COMPANY.phoneTel}
-                className="flex items-center gap-2 bg-white text-[#003f2e] px-8 py-4 rounded-xl font-bold text-sm hover:bg-white/90 transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 bg-white/15 border border-white/30 text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-white/25 transition-all"
               >
                 <Phone size={16} />
                 {COMPANY.phonePretty}
               </a>
             </div>
-            <div className="flex flex-wrap gap-6">
-              {['Kostenlose Beratung', 'Schnelle Umsetzung', 'Feste Ansprechpartner'].map((item) => (
-                <div key={item} className="flex items-center gap-2 text-white/80 text-sm">
-                  <CheckCircle size={15} className="text-[#bcff83]" />
-                  {item}
+
+            {/* Right: Form direkt im Hero */}
+            <div className="lg:ml-auto w-full max-w-md">
+              <div className="bg-white rounded-2xl shadow-2xl p-6 border border-gray-100">
+                <div className="mb-5">
+                  <p className="text-[#003f2e] font-black text-xl mb-1">Kostenloses Angebot</p>
+                  <p className="text-gray-500 text-sm">Antwort innerhalb von 24 Stunden · 100% unverbindlich</p>
                 </div>
-              ))}
+                <LeadForm />
+              </div>
             </div>
           </div>
         </div>
@@ -369,42 +376,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Lead Form Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <span className="text-[#2d746d] text-xs font-bold uppercase tracking-widest">Jetzt anfragen</span>
-              <h2 className="text-[#003f2e] mt-3 mb-4" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.5rem)', fontWeight: 800, lineHeight: 1.2 }}>
-                Kostenloses Angebot<br />für Frankfurt
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Schildern Sie uns Ihr Projekt und wir melden uns innerhalb von 24 Stunden
-                mit einem unverbindlichen Angebot zurück.
-              </p>
-              <div className="space-y-4">
-                {[
-                  { title: 'Kostenlose Erstberatung', desc: 'Wir kommen zu Ihnen und beraten Sie unverbindlich.' },
-                  { title: 'Schnelle Reaktionszeit', desc: 'Antwort innerhalb von 24 Stunden garantiert.' },
-                  { title: 'Transparente Preise', desc: 'Klare Angebote ohne versteckte Kosten.' },
-                  { title: 'Zertifizierter Fachbetrieb', desc: 'Mitglied im Bundesverband Garten- und Landschaftsbau.' },
-                ].map(({ title, desc }) => (
-                  <div key={title} className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#bcff83] rounded-full flex items-center justify-center shrink-0 mt-0.5">
-                      <CheckCircle size={13} className="text-[#003f2e]" />
-                    </div>
-                    <div>
-                      <p className="text-[#003f2e] font-semibold text-sm">{title}</p>
-                      <p className="text-gray-500 text-sm">{desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+      {/* Second CTA – für Nutzer die erst gescrollt haben */}
+      <section className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-[#003f2e] rounded-3xl p-8 lg:p-12 text-center shadow-xl">
+            <p className="text-[#bcff83] text-xs font-bold uppercase tracking-widest mb-3">Jetzt anfragen</p>
+            <h2 className="text-white font-black mb-3" style={{ fontSize: 'clamp(1.6rem, 4vw, 2.2rem)', lineHeight: 1.2 }}>
+              Kostenloses Angebot anfordern
+            </h2>
+            <p className="text-white/70 text-sm mb-8 max-w-lg mx-auto">
+              Antwort innerhalb von 24 Stunden · Unverbindlich · Keine versteckten Kosten
+            </p>
+            <div className="bg-white rounded-2xl p-6 text-left">
+              <LeadForm />
             </div>
-            <LeadForm
-              title="Ihre Anfrage"
-              subtitle="Füllen Sie das Formular aus und wir melden uns umgehend bei Ihnen."
-            />
           </div>
         </div>
       </section>
@@ -443,28 +428,28 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-[#003f2e]">
+      <section className="py-16 bg-[#003f2e]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-white font-black mb-4" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)' }}>
-            Bereit für einen gepflegten<br />
-            <span className="text-[#bcff83]">Garten oder Gebäude?</span>
+          <h2 className="text-white font-black mb-4" style={{ fontSize: 'clamp(1.8rem, 4vw, 2.6rem)' }}>
+            Fragen? Wir sind für Sie da.
           </h2>
-          <p className="text-white/70 text-lg mb-8">
-            Kontaktieren Sie uns jetzt und erhalten Sie Ihr kostenloses Angebot.
+          <p className="text-white/70 text-base mb-8">
+            Rufen Sie uns direkt an oder schreiben Sie uns – wir antworten innerhalb von 24 Stunden.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              to="/kontakt"
-              className="bg-[#bcff83] text-[#003f2e] px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#a8f060] transition-all shadow-xl hover:-translate-y-0.5"
-            >
-              Jetzt Angebot anfordern
-            </Link>
             <a
               href={COMPANY.phoneTel}
-              className="flex items-center gap-2 bg-white/15 text-white border border-white/30 px-6 py-4 rounded-xl font-semibold text-sm hover:bg-white/25 transition-all"
+              className="flex items-center gap-2 bg-[#bcff83] text-[#003f2e] px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#a8f060] transition-all shadow-xl hover:-translate-y-0.5"
             >
               <Phone size={16} />
               {COMPANY.phonePretty}
+            </a>
+            <a
+              href={`mailto:${COMPANY.email}`}
+              className="flex items-center gap-2 bg-white/15 text-white border border-white/30 px-6 py-4 rounded-xl font-semibold text-sm hover:bg-white/25 transition-all"
+            >
+              <Mail size={16} />
+              {COMPANY.email}
             </a>
           </div>
         </div>
